@@ -1,15 +1,15 @@
 package router
 
 import (
+	"cricket_score/common"
 	"github.com/gorilla/mux"
 	"net/http"
-	"cricket_score/common"
 )
 
 type Route struct {
-	Name string
-	Method string
-	Pattern string
+	Name        string
+	Method      string
+	Pattern     string
 	HandlerFunc http.HandlerFunc
 }
 

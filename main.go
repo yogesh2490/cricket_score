@@ -1,10 +1,10 @@
 package main
 
 import (
-	"log"
-	"net/http"
 	"cricket_score/common"
 	csr "cricket_score/router"
+	"log"
+	"net/http"
 )
 
 func main() {

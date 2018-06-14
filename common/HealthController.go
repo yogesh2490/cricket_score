@@ -13,6 +13,7 @@ type IHealthController interface {
 
 // Implements IHealthController
 type healthController struct{}
+
 /*
 	Return an implementation of IHealthController
 */
@@ -25,7 +26,7 @@ func GetHealthController() IHealthController {
 	This returns a UTF-8 charset response: "Alive"
 */
 
-func (this *healthController) GetHealth (w http.ResponseWriter, r *http.Request) {
+func (this *healthController) GetHealth(w http.ResponseWriter, r *http.Request) {
 	result := []byte("Alive")
 
 	w.Header().Set("Content-Type", "charset=UTF-8")
